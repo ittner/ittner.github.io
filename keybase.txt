@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/ittner
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://www.ittner.com.br
+  * I am ittner (https://keybase.io/ittner) on keybase.
+  * I have a public key with fingerprint 6DBE 6806 265A C517 7956  7293 48CF 13A4 BE42 B8BD
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01017c1d9cfa9e64efe195bc56f398ae813d4b815242e406504d71e3a03679db85e30a",
+      "fingerprint": "6dbe6806265ac5177956729348cf13a4be42b8bd",
+      "host": "keybase.io",
+      "key_id": "48cf13a4be42b8bd",
+      "kid": "01017c1d9cfa9e64efe195bc56f398ae813d4b815242e406504d71e3a03679db85e30a",
+      "uid": "f65ff74140f2e2b2e1d93721f2e19019",
+      "username": "ittner"
+    },
+    "service": {
+      "hostname": "www.ittner.com.br",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1575659060,
+  "expire_in": 157680000,
+  "prev": "9782078757904eef61aad0658c73e5e0d4f68d2a78973fc2a550bd2f3ed92e84",
+  "seqno": 6,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+
+owJ4nK1Sa0xTZxgujBHAOLeIzsnEcEiGSFfP/YLJiMwRzNItIoJy687lO+WspS2n
+hcK4uERh4AiwoAhyU1cBTVSQBXBARaxgsoADp9BM2A/CjAzRDZwbZN1Omf7bz31/
+vnzP+zzP97xv3ur1r6gCfOLvbHQ4Y3sHfL57xKnS51s/KoA4s5APRRdABrB2AaMA
+rDadQRKgaAhGYITiEYHhRZYBJA5EgDAExxOkiDE0C2gEE3CORggURwEOkwSMCxQC
+MBbGSIoROJoAGMxCakiUTHogW2TJZFNsSYEDJA2TKEmwPIFQFEOQFMpgOM2LCMbi
+HMBRjuYERZhptnoVSjiOtQKNZFYw5aFbi/cf/P85d86anUgSokjhCA6LKEA5FCjO
+GIUiygthYITxEq1ANrFZQGFLNpsJyFCRGlKwXIkH3rF6+3hRt9vtmn85Gt6cpeFk
+RW6RzTYzbzYq5UybzWKN9spt+ZY1PuB0L5x0nGQSlFEqilwgWyWzCYpGFCZvk7zW
+CEERJMHAJKyGQJ5FkoFOMq3ByrSV4/0H5CqWDEWjqTBFUwTFwDgAIomwrKDMgeYp
+DBAAFnCRpAWUpWiGwkQeZQkC5gRUxIDAoIDGIW9z2SYzFE0qOVm94mmV9CbWliMD
+qCio3BfzU/kEqLZtDvPLcmb6v5Ny6838JLnm5fq96uvdPVVQ4OsvkbwDGzzvdq+E
+NYftsaZ8fppshcJzEmo9njr3k8sDfNJxcHBq2/Li3/0+VY2pna3zhe6FUn1ZYWNU
+Wfpm//al39P2hcfO/LQcOB18Oln1Y5n27kiJZ3vD0MUhd0xk/czzvOGTb5i/Lf66
+c+XUZNQxlPB/ktZT2n899tD6pr7yLTWHMVdFJxnb1hW46Wh7fMr2ihuuXb3JzHG0
+duRwH2TxPHP/yd6+vhTpcvHq97vIhIXsEw5t2aGA0cSu38iQ0k0T54322RP+Uesq
+QnasVrYstp3/4dLY2XVNO69UTYcuLDx69tl9V9DwgE9EoDNp8fuf3YkJiUVXHxxc
+DugOuf/4vUonAr19s2e4Y2daZqo9YU4VZgnUPm25lpFelHF7Naa57+gs91f5hcqa
+3feKC3zv6Ap/4R58Y7xi7KnUxg97oHMOqN+x44PeC5Fq41VDR1jk7AHu2id+9aMT
+t5zO+fgzhqwZ+/jg8lcfQ7vgksaEt+Keqh+2BrcMnGk31BoQeWx/3bLYnnZkYrSp
+efTLuK3VPWPwXUfEF22nLJaLEdSNydeG9kzV6rMJY+dk3R+TmjLx2FKaO7YtJvRm
+8TiSHJ7FfxhRyLaszHWnbtD/uuXI4NTlvXOhz+MeD3zasW//XmcG0uCqXjV4TEL9
+xqKteHDD+GCEvFuWOjtWtSOaezknuUva4qqokumHo/8A2d7YsQ==
+=1mLu
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/ittner
+
+==================================================================

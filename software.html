@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+
+<head>
+ <title>Software - Alexandre Erwin Ittner</title>
+ <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+ <meta name="Language" content="en" />
+ <meta name="Author" content="Alexandre Erwin Ittner" />
+ <meta name="Description" content="A brief list of some applications and libraries that I developed" />
+ <link rel="alternate" type="application/rss+xml" title="Updates feed" href="feed.xml" />
+ <link rel="stylesheet" type="text/css" href="style.css" />
+ <link rel="Icon" type="image/png" href="favicon.png" />
+</head>
+
+<body>
+<div id="header">
+ <h1>Alexandre Erwin Ittner</h1>
+ <ul>
+  <li><a href="/">Main</a></li>
+  <li><a class="current" href="software.html">Software</a></li>
+  <li><a href="hp48.html">Software for HP48 calculators</a></li>
+  <li><a href="misc.html">Misc. stuff</a></li>
+  <li><a href="publications.html">Academic publications</a></li>
+  <li><a href="bookmark.html">Bookmarks</a></li>
+ </ul>
+</div>
+
+
+<h2>Software</h2>
+
+<p> Some of programs I wrote and some current projects. When possible they are distributed under the <a href="http://www.fsf.org/licenses/gpl.html">GNU General Public License</a> or, for Lua-related projects, the MIT/X License (a three-clause, non advertising, BSD license). Programs for the HP48 graphic calculator are in its <a href="hp48.html">own section</a>. People interested in know what other software I use should take a look in <a href="software-options.html">this page</a>.</p>
+
+
+<div class="project-list">
+
+<h3>Current projects</h3>
+
+<h4><a href="http://ittner.github.io/abelhas/">Abelhas</a></h4>
+<p> Abelhas ("bees" in Portuguese) is a Lua package for particle swarm optimization -- a straightforward optimization technique for discrete and linear functions. As a pure-Lua software, it will run in every system with a Lua interpreter.
+</p>
+
+
+<h4><a href="http://wikisked.sourceforge.net/">Sked</a></h4>
+<p>Sked is a personal organizer, calendar, schedule and braindump application with a wiki-like syntax for text formatting and organization. It's easier think of it as the result of the merge of a calendar with a desktop wiki. Everything is tailored to speed up editing operations and ease the usage workflow: links and styles are unobtrusively inferred from the syntax, entries are automatically saved after a few seconds, almost all commands have keyboard shortcuts, and the last entries are kept in a history. Also, the wiki code is not hidden from the editing interface -- this makes editing easier, avoids the create/view/change cycle, and allows copy and pasting text among other applications without loss of information. A user-defined delay is given before the text reformatting, so, its appearance will not change while the user is typing. All entries are stored in encrypted Berkeley DB4 database in the user's $HOME directory.</p>
+
+
+<h4><a href="http://lua-espeak.luaforge.net/">Lua-eSpeak</a></h4>
+<p> Lua-eSpeak is a Lua binding to the <a href="http://espeak.sf.net/">eSpeak</a> text-to-speech (TTS) library. It adds voice synthetisation features to the standard Lua interpreter. Works under Linux and Unix. </p>
+
+
+<h4><a href="http://ittner.github.io/lua-gd/">Lua-GD</a></h4>
+<p> Lua-GD is a Lua binding to the <a href="http://www.boutell.com/gd/">GD</a> image drawing library. It adds image authoring features to the standard Lua interpreter. Works under Linux, Unix and Windows. </p>
+
+
+<h4><a href="software/pypretex.tar.bz2" id="pypretex">PyPreTeX</a></h4>
+<p>
+<a href="software/PyPreTeX.png"><img src="software/PyPreTeX_mini.png" width="201" height="168" alt="PyPreTeX screenshot" /></a> <br/>
+PyPreTeX, or "Pythonic Previewer for LaTeX", is a small Python application that uses the LaTeX interpreter to display and save equations from TeX code. It is a handy tool for previewing and exporting equations as PNG images to other applications. It also saves the LaTeX code into the output files, so, it can be loaded back and edited. For Linux (but it may work in other Unix-like systems).</p>
+
+
+<h4><a href="http://ittner.github.io/lua-iconv/">Lua-iconv</a></h4>
+<p> Lua-iconv is a Lua binding to the POSIX  <a href="http://www.opengroup.org/onlinepubs/007908799/xsh/iconv.h.html">iconv</a> library. The iconv library converts a sequence of characters from one codeset into a sequence of corresponding characters in another codeset.</p>
+
+
+<h4><a href="http://luaforge.net/projects/lua-crypt/">lua-crypt</a></h4>
+<p>A small library that provides the POSIX <code>crypt()</code> to the standard Lua interpreter. It's my first "real" Lua module ;) </p>
+
+
+<h4><a href="http://lsp2html.sourceforge.net/">lsp2html</a></h4>
+<p> A small command-line application that formats LISP code into HTML.</p>
+
+
+
+
+
+
+<h3> Ad-hoc utilities, etc. (outdated and possibly obsolete) </h3>
+
+<h4><a href="software/add-include-guards.lua">add-include-guards.lua</a></h4>
+<p> An Lua script to automate the handling of <a href="http://en.wikipedia.org/wiki/Include_guard">#include guards</a> in C header files. Just run the script to the file and it will add the guard or do nothing if it already exists.</p>
+
+
+<h4><a href="software/sub2srt.lua">sub2srt.lua</a></h4>
+<p> An Lua script that converts ".sub" subtitle files into ".srt" ones. </p>
+
+
+<h4><a href="software/srtdelta.lua">subdelta.lua</a></h4>
+<p> An Lua script that changes the timing of ".sub" subtitle files. Useful for synchronization. </p>
+
+
+<h4><a href="software/text2h.c">text2h</a>  (text2h.c 3KB)</h4>
+<p> I really small application that converts text files in header files for use in C code; 100% pure ANSI C. Pick up, compile, and run. </p>
+
+
+<h4><a href="software/mkthumbs.tar.gz">mkthumbs.pl</a> (mkthumbs.tar.gz, 2 KB)</h4>
+<p> An old Perl script for thumbnailing and indexing images in HTML files. It generates index files for all image files in a given directory. Runs under Unix systems and needs the ImageMagick.
+</p>
+
+
+<h4><a href="software/bin2c-1.00.tar.gz">bin2c</a> (bin2c-1.00.tar.gz, 15 KB)</h4>
+<p> A command-line application that generates C arrays with the contents of a given binary file. Useful for including binaries into applications. This package includes the C source code and some old Linux binaries. It can be compiled in any Unix system (and, maybe, Windows).
+</p>
+
+
+<h4><a href="software/vb2rss.tar.gz">vb2rss</a> (vb2rss.tar.gz, 9KB) (in Portuguese)</h4>
+<p> A Python script that reads vBulletin-based Web forums and outputs RSS data for use with any news aggregator. The script is utterly small and may be easily adapted. </p>
+
+
+<h4><a href="software/phpbb2ff.tar.gz">PHPBB2FF - PHP BB2 Feed Filter</a> (phpbb2ff.tar.gz, 9KB) (in Portuguese)</h4>
+<p> A Perl script that reads <a href="http://www.phpbb.com">phpBB2</a> bulletin boards and outputs RSS data for use with any news aggregator. The script is utterly small and may be easily adapted. </p>
+
+<h4><a href="software/phorumff.tar.gz">PHORUMFF - Phorum Feed Filter</a> (phorumff.tar.gz, 9KB) (in Portuguese)</h4>
+<p> A Perl script that reads <a href="http://www.phorum.org">Phorum</a> bulletin boards and outputs RSS data for use with any news aggregator. The script is utterly small and may be easily adapted. </p>
+
+
+<h4><a href="software/ppage.tar.gz">PPage</a> (ppage.tar.gz, 3KB)</h4>
+<p>
+A nice and minimalistic CMS I wrote for handling my old homepage. It features some automation and allows uploading of local files to the web server. All data are stored in portable flat-files, so no database is needed.
+</p>
+
+
+<h4><a href="software/mktext.tar.gz">mktext</a>  (mktext.tar.gz 2KB)</h4>
+<p>A PHP script that renders images from text using TrueType fonts. It allows some dynamic generation of artistic headings for webpages. </p>
+
+
+
+
+
+<h3> Old "didactic" programs (i.e obsolete software for learning purposes) </h3>
+
+
+<h4><a href="software/ci-1.0.0.zip">CI</a> (ci-1.0.0.zip, 14 KB) (in Portuguese)</h4>
+<p>
+ An nice AutoLISP routine that draws integrated circuits with DIL encapsulation. You give some information about the circuit and it does the boring drawing work. For AutoCAD R14.
+</p>
+
+
+<h4><a href="software/osciloscopio.zip">Osciloscópio</a> (osciloscopio.zip, 331 KB) (in Portuguese)</h4>
+<p>
+ A nice Delphi program and the circuitry needed for building a single-channel digital oscilloscope. Utterly simple, but it was a nice learning time. <b>WARNING:</b> This is a old program that works under Windows 9x/ME only. I used direct hardware access functions that does not work on newer Windows releases. Feel free to fix this.
+</p>
+
+
+<h4><a href="software/rpasn-0.7.tar.gz">RPasN</a> (rpasn-0.7.tar.gz, 129 KB)</h4>
+<p>
+ A nice Pascal-based RPN calculator, with scripts, aliases, etc. available for MS-DOS/Windows and Linux and written when I was learning Pascal.
+</p>
+
+
+<h4><a href="software/kcppas.zip">KCPPAS</a> (kcppas.zip, 14 KB) (in Portuguese)</h4>
+<p>
+ A toy Pascal program for sending and receiving data from the parallel port in MS-DOS.  Written when a was studying electronics.
+</p>
+
+
+<h4><a href="software/voltimetro.zip">Voltímetro</a> (voltimetro.zip, 329 KB) (in Portuguese)</h4>
+<p>
+ A Pascal program and the circuitry needed to build a voltmeter on the parallel port. For MS-DOS.
+</p>
+
+</div>
+
+
+<div id="footer">
+© 1998-2011 Alexandre Erwin Ittner <br/>
+This page uses only <a href="https://validator.w3.org/check/referer" title="Validate page markup">valid</a> and semantically correct XHTML intended for standards-compliant browsers.
+</div>
+
+</body>
+</html>
+

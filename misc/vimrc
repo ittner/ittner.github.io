@@ -1,0 +1,106 @@
+
+"       *** HIC SUNT DRACONES ***           *** HERE BE DRAGONS ***
+"          Configuração do (g)Vim do Ittner. Use com cuidado!
+
+syntax enable           " Ativa syntax-highlight
+colorscheme koehler     " Estilo das cores
+
+set expandtab           " Usa espaços no lugar dos tabs
+set tabstop=4           " Cada tab equivale a 4 espaços
+set shiftwidth=4        " Indentação automática de 4 em 4 espaços
+set backspace=indent,eol,start  " backspace through everything in insert mode
+
+
+
+set colorcolumn=80      " Mostra uma barra lateral na 80ª coluna
+
+set mouse=a             " Ativa suporte ao mouse no X ou via SSH+screen/tmux
+set nu                  " Exibe números de linhas
+
+set nocp                " Não tenta ser compatível com o Vi original. dã!
+filetype plugin on 
+filetype plugin indent on " Plugins de indentação de acordo com o tipo de arquivo
+
+set hlsearch            " Exibe destaque para o texto procurado
+set linebreak           " line-wrap para a janela
+
+set ignorecase          " searches are case insensitive...
+set smartcase           " ... unless they contain at least one capital letter
+set incsearch           " Busca incremental.
+
+
+" Coloca os arquivos de swap no meu $HOME
+set directory^=$HOME/.vim/tmp//
+
+
+" Buffer explorer
+map <F2> :BufExplorer<CR>
+
+" taglist
+map <F4> :TlistToggle<CR>
+
+
+" NERD_tree
+let NERDTreeChDirMode=2
+let NERDTreeIgnore=['\.o$']
+let NERDTreeShowBookmarks=1
+let NERDTreeMapActivateNode="<CR>"
+map <F3> :NERDTreeToggle<CR>
+
+
+" Shift + Page Up/Down para alternar buffers
+" Só funciona no GVim 
+map <S-PageUp> :bn<CR>
+map <S-PageDown> :bp<CR>
+" Ctrl+N/P funciona no terminal
+map <C-P> :bp<CR> 
+map <C-N> :bn<CR> 
+
+
+
+
+" Usa <espaço> para entrada de comandos
+noremap <Space> :
+
+
+" Ctrl+S salva o arquivo atual, em qualquer modo. Para isso funcionar no
+" termina, é rodar um "sttype stop ''" antes de abrir o Vim. Eu coloco o
+" meu no .bashrc.
+map <C-S> :w<CR>
+imap <C-S> <C-O>:w<CR>
+
+
+" Corrige o mapeamento das combinações Ctrl+setas para funcionar no terminal
+" da mesma forma que funcionam no X (pulando palavras inteiras).
+"
+" Isto falhava ao rodar dentro do screen. A gambiarra abaixo resolveu o problema.
+"
+if match($TERM, "screen") != -1
+    set term=xterm
+endif
+
+map <ESC>[5A <C-Up>
+map <ESC>[5B <C-Down>
+map <ESC>[5C <C-Right>
+map <ESC>[5D <C-Left>
+
+map! <ESC>[5A <C-Up>
+map! <ESC>[5B <C-Down>
+map! <ESC>[5C <C-Right>
+map! <ESC>[5D <C-Left>
+
+
+
+" Por alguma razão, isso só funciona direito no screen se ficar após as
+" outras opções. Talvez seja problema de compatibilidade com os outros
+" plugins.
+set t_Co=256
+
+
+" Configura títulos automaticamente
+autocmd BufEnter * let &titlestring = hostname() . "[vim(" . expand("%:t") . ")]"
+
+" Load Pathogen to handle paths and other plugins
+execute pathogen#infect()
+
+

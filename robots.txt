@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /misc/filtros_adblock.txt
+Disallow: /misc/blockfile

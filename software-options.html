@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+
+<head>
+ <title>Software I use - Alexandre Erwin Ittner</title>
+ <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+ <meta name="Language" content="en" />
+ <meta name="Author" content="Alexandre Erwin Ittner" />
+ <link rel="alternate" type="application/rss+xml" title="Updates feed" href="feed.xml" />
+ <link rel="stylesheet" type="text/css" href="style.css" />
+ <link rel="Icon" type="image/png" href="favicon.png" />
+</head>
+
+
+<body>
+<div id="header">
+ <h1>Alexandre Erwin Ittner</h1>
+ <ul>
+  <li><a href="/">Main</a></li>
+  <li><a href="software.html">Software</a></li>
+  <li><a href="hp48.html">Software for HP48 calculators</a></li>
+  <li><a href="misc.html">Misc. stuff</a></li>
+  <li><a href="publications.html">Academic publications</a></li>
+  <li><a href="bookmark.html">Bookmarks</a></li>
+ </ul>
+</div>
+
+
+
+<h2>Software I Use (and why)</h2>
+
+<p>Sometimes people ask me what application I use for some task and usually my answers raises a few more questions — some of them also raises eyebrows. This text lists some of my favorite applications and why I chose them. I listed only <em>broad use</em> applications, since rarely someone ask me for specific ones. <strong>Last update: 05.Sep.2015</strong></p>
+
+
+<h3>Operating system</h3>
+<p>Some kind of Linux. I started using Linux in 1998/99 with Conectiva, a Brazilian distro of the time, and since mid 2000 it is my primary operating system. Currently I use <a href="http://www.ubuntu.com">Ubuntu</a> in my laptop and <a href="http://www.debian.org/">Debian</a> in other two other machines at home (one of them turned into a mix of server and media center). Almost all applications listed in this page are available from these and (possibly) any other general purpose distribution. I also have a Windows XP license that came with a laptop bought some years ago that I run confined in a virtual machine when I need to test software or when I <em>really</em> need some application that have no Linux equivalent.</p>
+
+
+<h3>E-mail client</h3>
+<p><a href="http://sylpheed.sraoss.jp/en/">Sylpheed</a>. I usually keep a safe distance from webmails — they are too cumbersome, impractical, slow, bandwidth hungry, and terribly unsafe to be used on a daily basis. I also do not like to trust a remote server to store the single copy of my messages. Despite this, I access my Gmail or Google Apps accounts through the webmail interface (mostly from work, other people's box, or for maintenance reasons) but, thanks to IMAP, I always store the messages locally and delete them from server after a few weeks — a procedure intended to limit the damages in the event of my account being compromised.</p>
+
+
+<h3>Feed reader, RSS/Atom aggregator, etc.</h3>
+<p>For some of the same reasons I do not use webmails I also avoid online feed readers, so I chose <a href="http://www.newsbeuter.org">Newsbeuter</a>, a text terminal application which calls itself "the Mutt of newsreaders" and have a lot of reasons to deserve such title — no other news reader matches its configurability and naturality for keyboard freaks like me. I also used <a href="http://liferea.sourceforge.net/">Liferea</a> for some years.</p>
+
+
+<h3>Instant Messaging</h3>
+<p><a href="http://pidgin.im">Pidgin</a>. I tried to give <a href="http://live.gnome.org/Empathy">Empathy</a> a chance, but the lack of <a href="http://www.cypherpunks.ca/otr/" title="Off-the-record messaging">OTR</a> and other features keeps me from using it.</p>
+
+
+<h3>Text editor (for programming)</h3>
+<p>For text editing I use <a href="http://www.geany.org/">Geany</a>, with the Lua scripting plug-in, chosen as a compromise between features, usability, speed, and extensibility, and <a href="http://www.vim.org/">Vim</a> (specially when editing server configuration files over SSH). Despite this, I am an atheist and do not attend to the <a href="http://6thstreetradio.org/~davek/vi.html">Cult of Vi</a> nor the <a href="https://googledrive.com/host/0B6LMD0u8OhYYZEotN2QyR1hwR1k/">Church of Emacs</a> :)</p>
+
+
+<h3>Calendar, schedule, and appointments</h3>
+<p><a href="http://wikisked.sourceforge.net/">Sked</a>. I always had some troubles with standard software in this area, so I wrote one that works for me. Sked is a mix of a calendar, schedule, braindump, activity journal, and a desktop wiki and brings the bare minimum amount of features I need.</p>
+
+
+<h3>Web browser</h3>
+<p><a href="http://www.mozilla.org">Mozilla Firefox</a> with a few extensions like  <a href="https://addons.mozilla.org/firefox/addon/ublock-origin/">uBlock Origin</a>, <a href="http://flashblock.mozdev.org/">FlashBlock</a>, <a href="https://www.eff.org/https-everywhere">HTTPS Everywhere</a>, and <a href="http://www.greasespot.net/">GreaseMonkey</a>. I also run Opera, Chromium, Midori, and Epiphany for testing and experimentation when needed.</p>
+
+<p>I'm a bit strict with my browser privacy configuration. For example, I set Firefox to not use DOM storage, block third-party cookies and clear standard cookies on closing and added some domains to the cookie blacklist — these settings avoids a lot of garbage in my browser and spoils tracking without preventing the session handling. To prevent <a href="https://en.wikipedia.org/wiki/Flash_cookies">Flash cookies</a> from being saved I removed the write permissions of the directory <code>~/.macromedia/Flash_Player</code>. A lot of irrelevant content is also blocked with ad-blocking filters (not just ads, but boring and useless bits too) and I use FlashBlock to restrict the Flash objects loaded by my browser.</p>
+
+
+<h3>MUD client</h3>
+<p><a href="http://kildclient.sourceforge.net">KildClient</a> of course. If you do not know what is a MUD, <a href="http://mud.valinor.com.br">look this</a> (in Portuguese).</p>
+
+
+<h3>Office suite</h3>
+<p><a href="http://www.libreoffice.org">LibreOffice</a>, as it just works.</p>
+
+
+<h3>Version control</h3>
+<p>The system is, of course, project-dependent but whenever possible I use <a href="http://www.git-scm.com">Git</a>; Almost all of my personal project are now in this system, except the very few ones that still in <a href="http://subversion.tigris.org/">Subversion</a> waiting an opportunity to be converted and one project which does not fit well in the Git model. My preference for Git comes from its features and excellent technical properties but I have no bias towards other versioning systems nor any problem in mixing several VCS for daily use.</p>
+
+
+<h3>Email and data encryption</h3>
+<p><a href="http://www.gnupg.org/">GnuPG</a>, just grab <a href="key.pub.asc">my key</a>.</p>
+
+
+<h3>Disk encryption</h3>
+<p>Currently I use a standard <a href="http://code.google.com/p/cryptsetup/">LUKS</a>/dm-crypt to encrypt all the volumes of all my Linux systems, including the root and swap ones, with the sole exception of the very small boot partition. All these tools are pretty fast, natively available in modern Linux distros, and needs (relatively) few configuration. I use this same approach in some of my USB flash drives, but the ones which I may need to use in Windows are encrypted with <a href="http://www.truecrypt.org/">TrueCrypt</a>. This setup is mainly intended to prevent data leak in the event of a hardware robbery (this never happened to me, but better safe than sorry).</p>
+
+
+<h3 id="backup">Backup</h3>
+
+<p>I have two concurrent backup strategies: the first is to use <a href="https://rsync.samba.org/">rsync</a> and some scripts to trivially take snapshots of my data to LUKS-encrypted external disk units and rotate them (the daily copy is kept for a week, the weekly copy for a month and the monthly one for three months); another disk is kept geographically apart from the first two and also gets periodic snapshots. This is a simple system intended to protect me from catastrophic hardware failures and easily detectable accidental file deletions.</p>
+
+<p>A more advanced strategy is required to the long-term backups which protect me from silent data corruption and accidental file deletions that go unnoticed for a long time. It requires ye olde <a href="http://www.gnu.org/software/tar/">GNU Tar</a>, <a href="http://www.gnupg.org/">GnuPG</a>, <a href="http://www.cdrkit.org/">genisoimage</a>, <a href="http://www.cdrkit.org/">wodim</a>, and <a href="http://www.dvdisaster.com/">dvdisaster</a>, all wired together with a few scripts, and provides me off-site encrypted redundant backups of all my data. Since this strategy is somewhat more complex and time consuming, it is fully automated with scripts that I run once a month (but the code is too ugly for public disclosure *shame*). For the curious, follows the procedure:</p>
+
+<ol>
+ <li>Backup everything in my $HOME to a tar file split in chunks of 64MiB. It is done by piping "tar" to "split", with the right options (ex. "<code class="cmd-line">tar -c /home/username/ | split -d -a4 -b64M - backup.tar.part</code>", the manpages have all the details);</li>
+ <li>Generate a temporary key pair in GnuPG; This key is protected by a passphrase;</li>
+ <li>Encrypt every chunk of data with the temporary key <strong>and</strong> my standard GPG key;</li>
+ <li>Generate a restore script;</li>
+ <li>Dump the temporary backup key pair to the file "KEY" (the key stills protected by the password);</li>
+ <li>Generate MD5 hashes for every encrypted chunk, the restore script, and the key file and store them in a "MD5SUMS" file;</li>
+ <li>Generate a set ISO images with the encrypted chunks, limited to 3 GiB (not 4.2 GiB!) each. The key file, the restore script, and MD5 hashes are included in every image;</li>
+ <li>Extend the ISO images with error recovering information using dvdisaster. The augmented images will have 4.2 GiB each;</li>
+ <li>Burn every image to two DVDs and use the MD5 checksums to ensure that the disc was correctly recorded;</li>
+ <li>Store one set of DVDs in an adamantium safe in a very very deep mine shaft guarded by a fully armed Klingon squad. The other set is kept inside a Mithril container in the Mount Doom surrounded by orcs (ok, this last step stills unimplemented).</li>
+</ol>
+
+<p>The restoration procedure that I (luckly) only executed in tests and simulations implies in individually decrypt each file, concatenating its output back into a giant tar archive that is later passed to GNU Tar to restore the original data. This procedure is automated with a script generated by the backup script.</p>
+
+<p>This approach has several advantages:</p>
+
+<ul>
+ <li>All data is encrypted, so it is secure to store the discs off-site;</li>
+ <li>There are two copies of each encrypted file, minimizing the risk of data loss due to storage media failures;</li>
+ <li>Even if the two discs are corrupted or one is lost and the other is found to be corrupted, the dvdisaster-augmented filesystem allows data recovery for corruption rates bellow a given threshold (~30% of the original data in my setup);</li>
+ <li>The temporary key (the most sensitive piece of information here) and the checksums (important for validation, but not mandatory) are stored in all discs, minimizing the chances of being lost;</li>
+ <li>The disc sets are kept geographically separated, so a local tragedy will not destroy the data;</li>
+ <li>In the very rare event of all copies of the temporary key becoming unreadable, I can use my main GnuPG to decrypt the data (I have another backup strategy for this one);</li>
+ <li>This procedure does not depends on exotic applications or something that may not be available if I need a restoration;</li>
+ <li>The Tar file format does not have a header so, even if any single piece is lost, all remaining pieces can be restored;</li>
+ <li>These backups are stored in optical media which have a differnt set of weaknesses and strengths from the magnetic media used for the first-level backup;</li>
+</ul>
+
+<p>The drawbacks are that this procedure takes a long time to run and needs some DVDs. A compromise between security and time, I execute it only once a month leaving some responsibility to the first backup system. To minimize the effort, I run the script at night and burn the generated ISO images to DVDs in the following morning. Some people will call me paranoid after reading this, but I understand =)</p>
+
+
+<h3>Music and video related programs</h3>
+<p>I usually listen to music in <a href="http://projects.gnome.org/rhythmbox/">Rhythmbox</a> and watch movies with <a href="http://mplayerhq.hu">MPlayer</a>, <a href="http://www.videolan.org">VLC</a>, and <a href="http://projects.gnome.org/totem/">Totem</a>. For music files tagging and organization, I use <a href="http://easytag.sourceforge.net/">Easytag</a> (it is a bit outdated, but works well).</p>
+
+
+
+
+<div id="footer">
+© 1998-2015 Alexandre Erwin Ittner <br/>
+This page uses only <a href="https://validator.w3.org/check/referer" title="Validate page markup">valid</a> and semantically correct XHTML intended for standards-compliant browsers.
+</div>
+
+</body>
+</html>

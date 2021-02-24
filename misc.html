@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" >
+
+<head>
+ <title>"Misc" stuff - Alexandre Erwin Ittner</title>
+ <meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
+  <meta name="Language" content="en" />
+ <meta name="Author" content="Alexandre Erwin Ittner" />
+ <meta name="Description" content="General stuff. Unclassified thigs. My virtual attic." /> 
+ <link rel="alternate" type="application/rss+xml" title="Updates feed" href="feed.xml" />
+ <link rel="stylesheet" type="text/css" href="style.css" />
+ <link rel="Icon" type="image/png" href="favicon.png" />
+</head>
+
+<body>
+<div id="header">
+ <h1>Alexandre Erwin Ittner</h1>
+ <ul>
+  <li><a href="/">Main</a></li>
+  <li><a href="software.html">Software</a></li>
+  <li><a href="hp48.html">Software for HP48 calculators</a></li>
+  <li><a class="current" href="misc.html">Misc. stuff</a></li>
+  <li><a href="publications.html">Academic publications</a></li>
+  <li><a href="bookmark.html">Bookmarks</a></li>
+ </ul>
+</div>
+
+
+
+<h2>"Misc" stuff</h2>
+
+<p>Misc stuff that (I hope!) will be useful for someone.</p>
+
+<div class="project-list">
+
+<h4><a href="https://addons.mozilla.org/en-US/android/addon/delete-cookies-on-exit/">Delete Cookies on Exit extension for Firefox for Android</a></h4>
+<p>Firefox for Android currently <a href="https://bugzilla.mozilla.org/show_bug.cgi?id=764433">lacks</a> advanced cookie management options, including a setting to delete all cookies when the browser is closed (ie, turn all cookies in session cookies). Such option prevents sites and web trackers from persisting data across browsing sessions, improving user privacy. This extension fixes the problem until Firefox Mobile gets this feature and, once enabled, will delete all cookies upon exit.
+</p>
+
+
+<h4><a href="https://github.com/ittner/lua-things/">Lua Things</a></h4>
+<p>Some random Lua scripts and modules, stored in Github.</p>
+
+
+<h4><a href="misc/makerss.lua">makerss.lua</a></h4>
+<p>A script to generate RSS and Atom feeds from static websites versioned in Git. It integrates gracefully with the most common update workflows and it's hooked in the scripts used to manage this site. All information about the files is extracted from the repository itself and the program generates UUIDs for each URL using the SHA1 sum of its last update, so no external bookkeeping is needed and the feed readers do never get confused.
+</p>
+
+
+<h4><a href="https://addons.mozilla.org/firefox/addon/59189">Google Dictionary Search Plugin for Firefox</a></h4>
+<p><del>An addon that provides a shortcut for the <a href="http://www.google.com/dictionary">Google Dictionary</a> in Firefox search toolbar. This addon is intended for the Portuguese speaking audience (ie, for translating words between Portuguese and other language).</del>
+<strong>The Google Dictionary website is no longer available so this extension is useless now. I just kept the code, so it may be used for learning.</strong>
+</p>
+
+
+<h4><a href="misc/pngcomments.py">pngcomments.py</a></h4>
+<p>A Python module to handle text chunks in <acronym title="Portable Network Graphics">PNG</acronym> images. It supports only a subset of the <a href="http://www.w3.org/TR/2003/REC-PNG-20031110/" title="Portable Network Graphics (PNG) Specification (Second Edition)">specification</a>, but it is enough for read and write comments and other text tags. I wrote it specifically for <a href="software.html#pypretex">PyPreTeX</a>, but I also used it in several other applications since then.
+</p>
+
+<h4 id="bookmarks.py"><a href="misc/bookmarks.py">bookmarks.py</a></h4>
+<p>A Python script to export tagged URLs, titles and descriptions from the Firefox bookmark database. Since version 3, Firefox uses a <a href="https://developer.mozilla.org/en/The_Places_database">very clever</a> database to hold the history, bookmarks, annotations, and typed addresses in a single place and also have a powerful bookmark management interface; I simply reused it to handle my <a href="bookmark.html">public bookmarks page</a>.
+This is neither a perfect nor polished program, but a quick hack to get the job done — I just run it from time to time to publish the addresses I think worth sharing.
+</p>
+
+<h4><a href="misc/pastebin.sh">pastebin.sh</a></h4>
+<p>A small shell script to send data to <a href="http://pastebin.com">pastebin.com</a> in the Unix way. The script uses curl and reads the standard input, so just pipe the output of any command and it will generate a new pastebin and print the URL to the standard output; remember to set the expiration times (default is one day) in the script or pass them in the command line.
+</p>
+
+<h4><a href="misc/juliansign.lua">juliansign.lua</a></h4>
+<p>A Lua script that adds the <a href="http://en.wikipedia.org/wiki/Julian_day">Julian day</a> (don't confuse with the Julian Calendar!) to your e-mail signature. It was just a quick rant/joke against the daylight saving time written after I forgot manually updating the timezone of a server.
+</p>
+
+<h4 id="adblock"><a href="misc/filtros_adblock.txt">Ad blocking filters for AdBlock Edge</a></h4>
+<p><strong>Notice:</strong> This filter list was intended for the now discontinued AdBlock Edge and will not be updated anymore (last version is from March 2015). I have since migrated to <a href="https://addons.mozilla.org/firefox/addon/ublock-origin/">uBlock Origin</a> and I recommend everybody to do the same. I plan to publish my customized filter list here once I automate the process.</p>
+
+<p>My hand-crafted filter list for <a href="https://addons.mozilla.org/pt-br/firefox/addon/adblock-edge/">Adblock Edge</a>, a content blocking extension for Firefox. In the current state of the Web, adblocking is absolutely required for productive users, but stills being a somewhat sensitive topic in an unstable balance of network resource usage, revenue generation, ethical concerns, security, privacy, and strong opinions for both sides. As a long time user of content-filtering strategies (starting with Junkbuster in the early 2000s), I decided using my own blocklist was the better option. Since this list <strong>may</strong> be useful for someone, I just published and update it randomly.</p>
+
+<p>Content filtering is always a very personal thing and something which is useless for me may be important for others, so all potential users are advised to <strong>check carefully</strong> the contents of this list before subscribing and disable any non-applicable rule. This list is very pragmatic and rationale for inclusion is simple: I don't mind with static banners or text ads sponsoring good sites, but everything that blinks, moves, plays sound, uses too much system resources or bandwidth, launches an outrageous amount of HTTP requests, tries to load Flash content, covers the material I'm trying to read, abuses cookies or DOM storage, tries to track me along the sites I visit, or somewhat challenges my sense of privacy or security will get added to this list at the first sight. Trackers and web bugs are also blacklisted.</p>
+
+<p><strong>I also block a lot of non-advertisement content</strong> which I find useless — for example, I blacklisted a lot of social web third party requests just because I see them more obnoxious than useful. I tried to minimize collateral effects, but the filters will get in the way of people wanting to use them. Also, it should not be necessary to say this, but I'll make it explicit: <strong>This list comes with absolutely no warranty of any kind</strong>, I just give it in good faith hoping it may be useful. The list is also in public domain, so you can make whatever you want with it.</p>
+
+</div>
+
+<div id="footer">
+© 1998-2015 Alexandre Erwin Ittner <br/>
+This page uses only <a href="https://validator.w3.org/check/referer" title="Validate page markup">valid</a> and semantically correct XHTML intended for standards-compliant browsers.
+</div>
+
+</body>
+</html>
+
